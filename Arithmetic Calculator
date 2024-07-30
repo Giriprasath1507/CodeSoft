@@ -1,0 +1,30 @@
+def calculator():
+    while True:
+        print("-------Arithmetic Calculator-------")
+        print("1.Addition\n2.Subraction\n3.Multiplication\n4.Division\n5.Exit")
+        choice=int(input("Enter your choice(1/2/3/4/5):"))
+        if(choice==1):
+            a=float(input("Enter a number:"))
+            b=float(input("Enter a number:"))
+            print("Sum of ",a," and ",b,"is ",a+b)
+        elif(choice==2):
+            a=float(input("Enter a number:"))
+            b=float(input("Enter a number:"))
+            print("Subraction of ",a," and ",b,"is ",a-b)
+        elif(choice==3):
+            a=float(input("Enter a number:"))
+            b=float(input("Enter a number:"))
+            print("Multiplication of ",a," and ",b,"is ",a*b)
+        elif(choice==4):
+            a=float(input("Enter a number:"))
+            b=float(input("Enter a number:"))
+            if(b==0):
+                print("Zero Division Error")
+            else:    
+                print("Division of ",a," and ",b,"is ",a/b)
+        elif(choice==5):
+            print("------Exiting----------")
+            break
+        else:
+            print("Invalid Input\nTry Again")
+calculator()              
